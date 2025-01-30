@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activities</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function toggleSidebar() {
+    let sidebar = document.querySelector(".sidebar");
+    let content = document.querySelector(".content");
+    let toggleBtn = document.querySelector(".toggle-btn");
+    if (sidebar.style.left === "0px") {
+        sidebar.style.left = "-250px";
+        content.style.marginLeft = "0";
+        toggleBtn.innerHTML = "☰"; // Change back to hamburger icon
+    } else {
+        sidebar.style.left = "0";
+        content.style.marginLeft = "260px";
+        toggleBtn.innerHTML = "×"; // Change to close icon
+    }
+}
+    </script>
+</head>
+<body>
+    <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
+    <div class="sidebar">
+    <button class="close-btn" onclick="toggleSidebar()">×</button>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="main.html">Home</a></li>
+                <li><a href="activities.html">Activities</a></li>
+                <li><a href="members.html">Members</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="features.html">Additional Features</a></li>
+            </ul>
+        </nav>
+    </header>
+    </div>
+    <div class="content">
+        <img src="https://i.pinimg.com/736x/68/4a/f7/684af72e970ad24eefd6ce2e640e2e3a.jpg" alt="bruhh" class="top-image">
+        <h2 style="font-size:xx-large;">Trang Giới thiệu (About Us)</h2>
+        <ul style="list-style-type:disc">
+            <li>Lịch sử (history): bla bla</li>
+            <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExZmh3anN1MG5ydDV6M2xycmI4aDM3ZGtoNm03NzVrMzA4cW9vYmF6MSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/dv6W1o8B3NTmfhXWHy/giphy.gif" alt="look??" class="mid-image">
+            <li>Sứ mệnh (goal):</li>
+            <p>Lan tỏa niềm đam mê bơi lội, xây dựng một cộng đồng bền vững và phát triển toàn diện</p>
+            <li>Đội ngũ hướng dẫn (Coachs):</li>
+            <ul style="list-style-type: circle;">
+                <li>i dont  know !!!</li>
+            </ul>
+    </ul>
+    </div>
+</body>
+</html>
