@@ -1,0 +1,153 @@
+/* General Styles */
+body {
+    background-color: #333;
+    margin-top: 500px;
+    margin-bottom: 500px;
+    padding-bottom: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: aliceblue;
+    display: flex;
+    flex-direction: row; /* Sidebar and content side by side */
+}
+
+/* Sidebar Styles */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Initially hidden */
+    width: 250px;
+    background: #333;
+    color: white;
+    height: 100vh;
+    padding: 15px;
+    transition: left 0.3s ease;
+    z-index: 1000; /* Ensure the sidebar is above other content */
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 10px 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.sidebar ul li a:hover {
+    background: #555;
+}
+
+/* Close Button in Sidebar */
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    color: 	#808080; /* Set a new color for the close button (yellow) */
+    border: none;
+    font-size: 30px; /* Smaller font size for the close button */
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    background-color: #444;
+}
+
+/* Content Area */
+.content {
+    margin-left: 0; /* Content starts after the sidebar */
+    padding: 20px;
+    transition: margin-left 0.3s ease;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center the content vertically */
+    align-items: center; /* Center the content horizontally */
+    height: 100vh; /* Take full screen height */
+    text-align: center; /* Center text */
+}
+
+/* Sidebar Visibility */
+.sidebar.open {
+    left: 0;
+}
+
+.content.open {
+    margin-left: 250px; /* Adjust the content margin when the sidebar is open */
+}
+
+/* Toggle button for showing the sidebar */
+.toggle-btn {
+    font-size: 30px; /* Smaller icon size */
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #333;
+    color: 	#808080; /* Set the color of the hamburger icon to yellow */
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 5px;
+}
+
+.toggle-btn:hover {
+    background-color: #444;
+}
+
+/* Icon styles */
+.toggle-btn:focus, .close-btn:focus {
+    outline: none;
+}
+/* Image format*/
+img {
+    border: 5px groove grey;
+    margin: 20px;
+}
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #808080;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #808080;
+}
+h2 {
+    font-size: xx-large;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: azure;
+}
+p {
+    font-size: x-large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+li {
+    font-size: large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/* styles.css */
+
+input[type="submit"] {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #808080;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #666666; /* Darker shade on hover */
+}

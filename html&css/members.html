@@ -1,0 +1,60 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activities</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function toggleSidebar() {
+    let sidebar = document.querySelector(".sidebar");
+    let content = document.querySelector(".content");
+    let toggleBtn = document.querySelector(".toggle-btn");
+    if (sidebar.style.left === "0px") {
+        sidebar.style.left = "-250px";
+        content.style.marginLeft = "0";
+        toggleBtn.innerHTML = "☰"; // Change back to hamburger icon
+    } else {
+        sidebar.style.left = "0";
+        content.style.marginLeft = "260px";
+        toggleBtn.innerHTML = "×"; // Change to close icon
+    }
+}
+    </script>
+</head>
+<body style="margin-top:100px ;">
+    <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
+    <div class="sidebar">
+    <button class="close-btn" onclick="toggleSidebar()">×</button>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="main.html">Home</a></li>
+                <li><a href="introduce.html">Introduce</a></li>
+                <li><a href="activities.html">Activities</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="features.html">Additional Features</a></li>
+            </ul>
+        </nav>
+    </header>
+    </div>
+    <div class="content">
+        <img src="https://i.pinimg.com/736x/33/43/42/3343422fa5cb91d2c2fb3c0b0a21f92d.jpg" alt="bruhh" class="top-image">
+        <h2 style="font-size:xx-large;">Thành viên (Members)</h2>
+        <ul style="list-style-type: disc;">
+            <li>Ban quản lý (manager):
+                <ul style="list-style-type: circle;">
+                    <li>Thùy Trinh<br><img src="https://i.pinimg.com/736x/d5/95/13/d595131282697c69120d1c44f98af531.jpg" alt="asdas" width="100px" height="100px" ></li>
+                    <li>Minh Thư <br><img src="https://i.pinimg.com/736x/77/5e/f6/775ef60c8f9bd1b087035df5d6baa21f.jpg" alt="sas" width="100px" height="100px"></li>
+                </ul>
+            </li>
+            <li>Vinh danh(glory):
+                <ul style="list-style-type: circle;">
+                    <caption style="font-size:xx-large  ;">Thành tích cá nhân hoặc đội nổi bật</caption>
+                    <li><img src="https://i.pinimg.com/736x/87/a6/df/87a6df704dbfecf5d3a1fa190070b5e2.jpg" alt="sda"></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activities</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function toggleSidebar() {
+    let sidebar = document.querySelector(".sidebar");
+    let content = document.querySelector(".content");
+    let toggleBtn = document.querySelector(".toggle-btn");
+    if (sidebar.style.left === "0px") {
+        sidebar.style.left = "-250px";
+        content.style.marginLeft = "0";
+        toggleBtn.innerHTML = "☰"; // Change back to hamburger icon
+    } else {
+        sidebar.style.left = "0";
+        content.style.marginLeft = "260px";
+        toggleBtn.innerHTML = "×"; // Change to close icon
+    }
+}
+    </script>
+</head>
+<body style="margin-top: 100px;">
+    <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
+    <div class="sidebar">
+        <button class="close-btn" onclick="toggleSidebar()">×</button>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="main.html">Home</a></li>
+                <li><a href="introduce.html">Introduce</a></li>
+                <li><a href="members.html">Members</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="features.html">Additional Features</a></li>
+            </ul>
+        </nav>
+    </header>
+    </div>
+    <div class="content">
+        <img src="https://i.pinimg.com/736x/8f/81/b5/8f81b5ff949716527492afe4a5b25dad.jpg" alt="bruhh" class="top-image">
+        <h2 style="font-size:xx-large;">Trang Hoạt động (Activities)</h2>
+        <ul style="list-style-type:disc;">
+            <li>Lịch tập luyện (schedule):
+                <ul style="list-style-type: circle;">
+                    <li>Thứ 2 (Monday): Tập kỹ thuật bơi (16:00 - 18:00)</li>
+                    <li>Thứ 4 (wednesday): Tập kỹ thuật bơi (16:00 - 18:00)</li>
+                    <li>Thứ 6 (Friday): Tập sức bền (15:30 - 17:30)</li>
+                </ul>
+            </li>
+            <li>Sự kiện (occasion):
+                <ul style="list-style-type: circle;">
+                    <li>Danh sách các giải bơi gần đây mà CLB tham gia (kèm hình ảnh).<br><img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExc3plbDcyc2JrM2s3YzVnYXluNjJwbTVyeGltczMyOHRkcnU3cjg5OCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/7DIF9HAz65YE8/giphy.gif" alt="great" class="side"></li>
+                    <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVBH4lpag7KrrVeOk5iXHR4QOLC8Hpy9jLBA&s" alt="ratttta"></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
